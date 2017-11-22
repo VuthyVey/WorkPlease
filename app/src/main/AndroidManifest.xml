@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".CreateBooking" />
+        <activity android:name=".Register" />
+        <activity android:name=".ListBooking" />
+        <activity android:name=".BookingInfo" />
+        <activity android:name=".ListBooking" />
     </application>
 
 </manifest>

@@ -5,5 +5,171 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.vuthy.workplease.ListBooking">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+
+            >
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/leftarrow"
+                android:width="100dp"
+                android:height="20dp"
+                android:text="Back"
+
+                />
+
+
+            <Button
+
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dip"
+                android:paddingRight="26dip"
+                android:background="#33D1FF"
+                android:text="9:00AM"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+
+                />
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dip"
+                android:paddingRight="26dip"
+                android:background="#33A5FF"
+                android:text="11:00AM"
+                android:layout_marginBottom="20dp"
+
+                />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dip"
+                android:paddingRight="26dip"
+                android:layout_marginBottom="20dp"
+                android:background="#336EFF"
+                android:text="1:00pm"
+
+                />
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dip"
+                android:paddingRight="26dip"
+                android:background="#5833FF"
+                android:text="3:00Pm"
+                android:layout_marginBottom="20dp"
+
+                />
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dip"
+                android:paddingRight="26dip"
+                android:background="#940CE8"
+                android:text="3:30AM"
+                android:layout_marginBottom="20dp"
+
+                />
+
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dip"
+                android:paddingRight="26dip"
+                android:background="#CE0CE8"
+                android:text="4:00PM"
+                android:layout_marginBottom="20dp"
+
+                />
+            <Button
+                android:id="@+id/bt7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dip"
+                android:paddingRight="26dip"
+                android:background="#E1089C"
+                android:text="4:30PM"
+                android:layout_marginBottom="20dp"
+
+                />
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dip"
+                android:paddingRight="26dip"
+                android:background="#E108BC"
+                android:text="4:50PM"
+                android:layout_marginBottom="20dp"
+
+                />
+            <Button
+                android:id="@+id/bt9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/clock"
+                android:drawableRight="@drawable/rightarrow"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dip"
+                android:paddingRight="26dip"
+                android:background="#F709E9"
+                android:text="6:00PM"
+                android:layout_marginBottom="20dp"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vuthy.workplease.Homepage">
+    tools:context="com.example.vuthy.workplease.Homepage"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
 
         <LinearLayout
@@ -31,11 +31,55 @@
                 android:text="+855 81 22 52 55"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:textSize="30sp"
+                android:textSize="32sp"
                 android:textColor="#ffffff"/>
 
         </LinearLayout>
-    </LinearLayout>
+        
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="40dp"
+            app:cardCornerRadius="10dp"
+            >
 
 
-</android.support.constraint.ConstraintLayout>
+
+       </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="220dp"
+            app:cardCornerRadius="10dp">
+
+            
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="40dp"
+            app:cardCornerRadius="10dp">
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="220dp"
+            app:cardCornerRadius="10dp">
+
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+</LinearLayout>

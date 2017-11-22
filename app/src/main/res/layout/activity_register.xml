@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vuthy.workplease.Register">
+    tools:context="com.example.vuthy.workplease.Register"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="300px"
+            android:src="@drawable/tostov"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/txtPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="លេខទូរស័ព្ទ: "
+                android:textSize="19.5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBoxPhoneNum"
+                android:hint="077238385"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtUser"
+                android:textSize="19.5dp"
+                android:text="នាម: "/>
+            <EditText
+                android:id="@+id/txtBoxUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tos Tov"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtPss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19.5dp"
+                android:text="លេខកូដ: "/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="****"
+                android:id="@+id/txtBoxpss"
+                android:inputType="textPassword"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingHorizontal="60dp"
+                android:text="ចុះឈ្មោះប្រើ"
+                android:textSize="16dp"
+                tools:ignore="OnClick" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

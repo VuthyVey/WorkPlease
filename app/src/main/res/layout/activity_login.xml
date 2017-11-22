@@ -4,6 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vuthy.workplease.Login">
+    tools:context="com.example.vuthy.workplease.Login"
+    android:background="@drawable/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/tostovsquare"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Connect Everyone's Life Better"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp"
+                    android:textAlignment="center"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:inputType="phone"
+                    android:layout_width="320dp"
+                    android:layout_height="57dp"
+                    android:drawableStart="@drawable/ic_phone_black_32dp"
+                    android:drawableLeft="@drawable/ic_phone_black_32dp"
+                    android:drawablePadding="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#ffffff"
+                    android:hint="លេខទូរស័ព្ទ"
+                    android:paddingLeft="25dp"
+                    android:textSize="18dp"
+                    android:id="@+id/phoneInput"/>
+
+                <EditText
+                    android:inputType="numberPassword"
+                    android:layout_width="320dp"
+                    android:layout_height="57dp"
+                    android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:background="#ffffff"
+                    android:hint="កូដសម្ងាត់"
+                    android:paddingLeft="25dp"
+                    android:textSize="18dp"
+                    android:id="@+id/passInput"/>
+
+                <Button
+                    android:layout_width="320dp"
+                    android:layout_height="57dp"
+                    android:text="ចូលរួម"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:textSize="22dp"
+                    android:textColor="#ffffff"
+                    android:background="#BE4248"
+                    android:textAlignment="center"
+                    android:id="@+id/loginButton"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ឬក៏"
+                    android:layout_gravity="center"
+                    android:textColor="#ffff"
+                    android:textSize="18dp"
+                    android:layout_marginTop="6dp"/>
+
+                <Button
+                    android:layout_width="320dp"
+                    android:layout_height="57dp"
+                    android:text="ចុះឈ្មោះថ្មី"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:textSize="22dp"
+                    android:textColor="#ffffff"
+                    android:background="#4A89AA"
+                    android:textAlignment="center"
+                    android:id="@+id/registerButton"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ភ្លេច​លេខ​កុដសម្ហាត់ឬ?"
+                    android:layout_gravity="center"
+                    android:textColor="#ffff"
+                    android:textSize="18dp"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/forgotPassword"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

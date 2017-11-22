@@ -22,7 +22,6 @@
         <activity android:name=".Register" />
         <activity android:name=".ListBooking" />
         <activity android:name=".BookingInfo" />
-        <activity android:name=".ListBooking" />
     </application>
 
 </manifest>

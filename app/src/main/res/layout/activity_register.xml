@@ -15,8 +15,9 @@
         <ImageView
 
             android:layout_width="wrap_content"
-            android:layout_height="300px"
-            android:src="@drawable/tostov"/>
+            android:layout_height="250px"
+            android:src="@drawable/tostov"
+            tools:ignore="Suspicious0dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/txtUser"
                 android:textSize="19.5dp"
-                android:text="នាម: "/>
+                android:text="ឈ្មោះគណនី: "/>
             <EditText
                 android:id="@+id/txtBoxUser"
                 android:layout_width="match_parent"
@@ -66,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="19.5dp"
-                android:text="លេខកូដ: "/>
+                android:text="លេខសម្ងាត់: "/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

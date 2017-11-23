@@ -7,23 +7,27 @@
     tools:context="com.example.vuthy.workplease.Homepage"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F1">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="220dp"
             android:orientation="vertical"
-            android:background="@drawable/background_color">
+            android:background="@drawable/background_homepage">
 
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_person_black_24dp"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -37,15 +41,49 @@
         </LinearLayout>
         
         <android.support.v7.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="205dp"
-            android:layout_marginLeft="40dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="190dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="20dp"
             app:cardCornerRadius="10dp"
             >
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/book"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:textAllCaps="true"/>
+
+
+       </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="190dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="20dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:src="@drawable/booking"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"/>
@@ -54,54 +92,87 @@
                 android:layout_height="2dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/background_color"
-                android:layout_marginTop="90dp"/>
+                android:layout_marginTop="80dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Booking"
-                android:textSize="24dp"
+                android:text="Request"
+                android:textSize="20dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="105dp"
+                android:layout_marginTop="87dp"
                 android:textAllCaps="true"/>
 
 
-       </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="205dp"
-            android:layout_marginLeft="220dp"
-            app:cardCornerRadius="10dp">
-
-
-
 
 
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="390dp"
-            android:layout_marginLeft="40dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="320dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="20dp"
             app:cardCornerRadius="10dp">
 
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/booking"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decloration"
+                android:textSize="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:textAllCaps="true"/>
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="390dp"
-            android:layout_marginLeft="220dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="320dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="20dp"
             app:cardCornerRadius="10dp">
 
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/booking"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:textAllCaps="true"/>
 
         </android.support.v7.widget.CardView>
     </RelativeLayout>
 
-
+    </ScrollView>
 </LinearLayout>

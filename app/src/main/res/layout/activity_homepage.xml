@@ -29,15 +29,6 @@
                 android:src="@drawable/ic_person_black_24dp"
                 android:layout_marginTop="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+855 81 22 52 55"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:textSize="32sp"
-                android:textColor="#ffffff"/>
-
         </LinearLayout>
         
         <android.support.v7.widget.CardView
@@ -70,8 +61,17 @@
                 android:layout_marginTop="87dp"
                 android:textAllCaps="true"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="+855 81 22 52 55"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
 
-       </android.support.v7.widget.CardView>
+
+        </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="120dp"
@@ -81,12 +81,6 @@
             android:layout_marginHorizontal="20dp"
             app:cardCornerRadius="10dp">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/booking"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
@@ -103,8 +97,12 @@
                 android:layout_marginTop="87dp"
                 android:textAllCaps="true"/>
 
-
-
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/booking" />
 
 
         </android.support.v7.widget.CardView>

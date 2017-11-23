@@ -5,58 +5,142 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.vuthy.workplease.BookingInfo">
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        android:drawableLeft="@drawable/leftarrow"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
-
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/cardView1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        card_view:cardBackgroundColor="#33D1FF"
-        android:layout_gravity="center"
-        card_view:cardCornerRadius="0dp"
-        tools:layout_editor_absoluteY="75dp"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-        android:id="@+id/time1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:gravity="center"
-            android:text="Time:9:00AM"
-            android:textSize="20dp"
-
-
-        />
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/cardView2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        card_view:cardBackgroundColor="#33D1FF"
-        android:layout_gravity="center"
-        card_view:cardCornerRadius="0dp"
-        tools:layout_editor_absoluteY="145dp"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/time1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:gravity="center"
-            android:text="Date: 9 , November, 2017"
-            android:textSize="20dp"
-
-
+        android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+       <Button
+           android:id="@+id/backButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="បកក្រោយ"
+           android:textSize="20dp"
+           android:drawableLeft="@drawable/leftarrow"
             />
-    </android.support.v7.widget.CardView>
+       <android.support.v7.widget.CardView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/card_view"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="20dp"
+           card_view:cardBackgroundColor="#33D1FF"
+
+           >
+           <TextView
+               android:id="@+id/info_text"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+               android:paddingLeft="30dip"
+               android:drawablePadding="10dip"
+               android:drawableLeft="@drawable/calender"
+               android:textSize="20dp"
+               android:text="កាលបរិច្ឆេទ: 9, November, 2017"
+
+               />
+       </android.support.v7.widget.CardView>
+       <android.support.v7.widget.CardView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/card_view1"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="20dp"
+           card_view:cardBackgroundColor="#33D1FF"
+
+           >
+           <TextView
+               android:id="@+id/info_text1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+               android:drawablePadding="10dip"
+               android:drawableLeft="@drawable/clock"
+               android:paddingLeft="30dip"
+               android:textSize="20dp"
+               android:text="ពេលវេលា: 9:00AM"
+
+               />
+       </android.support.v7.widget.CardView>
+       <android.support.v7.widget.CardView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/card_view2"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="20dp"
+           card_view:cardBackgroundColor="#33D1FF"
+
+           >
+           <TextView
+               android:id="@+id/info_text2"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+               android:drawablePadding="10dip"
+               android:drawableLeft="@drawable/seat"
+               android:paddingLeft="30dip"
+               android:textSize="20dp"
+               android:text="កៅអី: 5"
+
+               />
+       </android.support.v7.widget.CardView>
+       <android.support.v7.widget.CardView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/card_view3"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="20dp"
+           card_view:cardBackgroundColor="#33D1FF"
+
+           >
+           <TextView
+               android:id="@+id/info_text3"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+               android:drawablePadding="10dip"
+               android:drawableLeft="@drawable/station"
+               android:paddingLeft="30dip"
+               android:textSize="20dp"
+               android:text="ចេញពីចំណត់: កំពង់ចាម"
+
+               />
+       </android.support.v7.widget.CardView>
+       <android.support.v7.widget.CardView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/card_view4"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="20dp"
+           card_view:cardBackgroundColor="#33D1FF"
+
+           >
+           <TextView
+               android:id="@+id/info_text4"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+               android:drawablePadding="10dip"
+               android:drawableLeft="@drawable/destination"
+               android:paddingLeft="30dip"
+               android:textSize="20dp"
+               android:text="គោលដៅចំណត់: ភ្នំពេញ"
+
+               />
+       </android.support.v7.widget.CardView>
+   </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

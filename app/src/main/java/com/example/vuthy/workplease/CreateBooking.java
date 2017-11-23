@@ -6,7 +6,9 @@ import android.app.TimePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -20,8 +22,8 @@ public class CreateBooking extends AppCompatActivity {
 
     private EditText dateEditText;
     private EditText timeEditText;
-    private Spinner stating_station;
-    private Spinner ending_station;
+    private Spinner statingStation;
+    private Spinner endingStation;
     private Button submit;
     private Calendar calendar = Calendar.getInstance();
     private Calendar bookingDate = Calendar.getInstance();
@@ -35,6 +37,12 @@ public class CreateBooking extends AppCompatActivity {
         dateEditText = (EditText) findViewById(R.id.booking_date);
         timeEditText = (EditText) findViewById(R.id.booking_time);
 
+        statingStation = (Spinner) findViewById(R.id.stating_station);
+        endingStation = (Spinner) findViewById(R.id.ending_station);
+
+        // Disable Auto Focus
+        dateEditText.setSelected(false);
+        timeEditText.setSelected(false);
 
         int year, month, dayOfMonth, hour, minute;
         year = calendar.get(Calendar.YEAR);
@@ -44,7 +52,15 @@ public class CreateBooking extends AppCompatActivity {
         minute = calendar.get(Calendar.MINUTE);
         int am_pm = calendar.get(Calendar.AM_PM);
         Log.d("Check: ", String.valueOf(am_pm));
-        String amOrpm = new String("am");
+
+        String minuteString;
+        if (minute < 10 ) {
+            minuteString = "0" + minute;
+        } else {
+            minuteString = String.valueOf(minute);
+        }
+
+        String amOrpm;
         if (hour > 12) {
             hour = hour - 12;
             amOrpm = "pm";
@@ -55,39 +71,27 @@ public class CreateBooking extends AppCompatActivity {
         String monthString = new DateFormatSymbols().getMonths()[month];
 
         dateEditText.setHint(dayOfMonth + " " + monthString + ", " + year );
-        timeEditText.setHint(hour + ":" + minute + " " + amOrpm);
+        timeEditText.setHint(hour + ":" + minuteString + " " + amOrpm);
 
-        dateEditText.setOnClickListener(new View.OnClickListener() {
+
+        dateEditText.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
+            public boolean onTouch(View view, MotionEvent motionEvent) {
                 showDialog(0);
+                return false;
+
             }
         });
 
-        dateEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        timeEditText.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onFocusChange(View view, boolean b) {
-                if (b) {
-                    showDialog(0);
-                }
-            }
-        });
-
-        timeEditText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+            public boolean onTouch(View view, MotionEvent motionEvent) {
                 showDialog(1);
-            }
-        });
+                return false;
 
-        timeEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean b) {
-                if (b) {
-                    showDialog(1);
-                }
             }
         });
+        
     }
 
     @Override
@@ -129,14 +133,21 @@ public class CreateBooking extends AppCompatActivity {
     private TimePickerDialog.OnTimeSetListener myTimeListener = new TimePickerDialog.OnTimeSetListener() {
         @Override
         public void onTimeSet(TimePicker timePicker, int hour, int minute) {
-            String amOrpm = new String("am");
+            String minuteString;
+            if (minute < 10 ) {
+                minuteString = "0" + minute;
+            } else {
+                minuteString = String.valueOf(minute);
+            }
+
+            String amOrpm;
             if (hour > 12) {
                 hour = hour - 12;
                 amOrpm = "pm";
             } else {
                 amOrpm = "am";
             }
-            timeEditText.setText(hour  + ":"+ minute + amOrpm);
+            timeEditText.setText(hour  + ":"+ minuteString + amOrpm);
         }
     };
 }

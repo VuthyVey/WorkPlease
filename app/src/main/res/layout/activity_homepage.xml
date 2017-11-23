@@ -43,7 +43,27 @@
             android:layout_marginLeft="40dp"
             app:cardCornerRadius="10dp"
             >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/booking"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_color"
+                android:layout_marginTop="90dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking"
+                android:textSize="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="105dp"
+                android:textAllCaps="true"/>
 
 
        </android.support.v7.widget.CardView>
@@ -55,7 +75,9 @@
             android:layout_marginLeft="220dp"
             app:cardCornerRadius="10dp">
 
-            
+
+
+
 
 
         </android.support.v7.widget.CardView>

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">WorkPlease</string>
     <string-array name="station_array">
-        <item>Phnom Penh</item>
-        <item>Battambong</item>
-        <item>Kep</item>
+        <item>ភ្នំពេញ</item>
+        <item>បាត់ដំបង</item>
+        <item>កែប</item>
     </string-array>
     <string-array name="number_of_seat_array">
         <item>1</item>

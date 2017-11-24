@@ -8,215 +8,276 @@
     android:orientation="vertical">
 
 
-        <RelativeLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F1">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#F0F0F1">
+            android:layout_height="200dp"
+            android:background="@drawable/background_color"
+            android:orientation="vertical">
 
-            <LinearLayout
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/boy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="+855 81 22 52 55"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/booking_home"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="170dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/book" />
+
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/background_color"
-                android:orientation="vertical">
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/background_color" />
 
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/boy"
-                    android:layout_marginTop="15dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:text="+855 81 22 52 55"
-                    android:textColor="#ffffff"
-                    android:textSize="32sp" />
-
-            </LinearLayout>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_alignParentStart="true"
-                android:layout_marginHorizontal="35dp"
-                android:layout_marginTop="170dp"
-                app:cardCornerRadius="10dp"
-                android:id="@+id/booking_home">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:src="@drawable/book" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="80dp"
-                    android:background="@drawable/background_color" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="87dp"
-                    android:text="Booking"
-                    android:textAllCaps="true"
-                    android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:text="កក់កៅអី"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
 
 
-            </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginHorizontal="35dp"
-                android:layout_marginTop="170dp"
-                app:cardCornerRadius="10dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="170dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="10dp">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:src="@drawable/request" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/request" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="80dp"
-                    android:background="@drawable/background_color" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="87dp"
-                    android:text="Request"
-                    android:textAllCaps="true"
-                    android:textSize="20dp" />
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_alignParentStart="true"
-                android:layout_marginHorizontal="35dp"
-                android:layout_marginTop="300dp"
-                app:cardCornerRadius="10dp">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:src="@drawable/cargo" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="80dp"
-                    android:background="@drawable/background_color" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="87dp"
-                    android:text="Cargo"
-                    android:textAllCaps="true"
-                    android:textSize="20dp" />
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginHorizontal="35dp"
-                android:layout_marginTop="300dp"
-                app:cardCornerRadius="10dp">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:src="@drawable/tutorial" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="80dp"
-                    android:background="@drawable/background_color" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="87dp"
-                    android:text="Tutorial"
-                    android:textAllCaps="true"
-                    android:textSize="20dp" />
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_alignParentBottom="true"
-                >
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="35dp"
-                    android:src="@drawable/feedback"
-                    android:layout_marginHorizontal="65dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Feedback"
-                    android:layout_marginHorizontal="45dp"
-                    android:layout_marginTop="30dp"
-                    android:textSize="18dp"/>
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/background_color" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="35dp"
-                    android:src="@drawable/setting"
-                    android:layout_marginHorizontal="265dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Setting"
-                    android:layout_marginLeft="260dp"
-                    android:layout_marginTop="30dp"
-                    android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:text="រកឡានភ្លាម"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
 
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="20dp"
-                android:layout_centerInParent="true"
-                app:cardCornerRadius="20dp"
-                app:cardBackgroundColor="#4A89AA">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/man"/>
-            </android.support.v7.widget.CardView>
-        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="300dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/cargo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/background_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:text="ផ្ញើឥវ៉ាន់"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="300dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/tutorial" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/background_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="87dp"
+                android:text="របៀបប្រើ"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#4A89AA"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/man" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:cardBackgroundColor="@android:color/transparent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_history_black_24dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:cardBackgroundColor="@android:color/transparent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_access_time_black_24dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="30dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/feedback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="មតិយោបល់"
+                android:textSize="18dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="30dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="កែទម្រង់"
+                android:textSize="18dp" />
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
 </LinearLayout>

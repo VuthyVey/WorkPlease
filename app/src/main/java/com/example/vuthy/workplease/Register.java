@@ -19,7 +19,9 @@ public class Register extends AppCompatActivity {
 
     private Button register;
     private Editable phoneNum;
-    private String regexStr = "^0(?!0)[0-9]{8,10}$";
+    private String regexPhone = "^0(?!0)[0-9]{8,10}$";
+    private String regexUser = "^[a-z]{1}([a-zA-Z0-9_]+)";
+    private String regexPass = "([A-Za-z0-9!@#$%^&*()\\-_=+{};:,<.>]{2,30})";
 
     private String myPhone = "";
     private String myUsername = "";
@@ -56,14 +58,14 @@ public class Register extends AppCompatActivity {
                 checkSuccess = false;
                 try{
                     Integer.parseInt(myPhone);
-                    if(myPhone.matches(regexStr) && !myUsername.equals(" ") && !myUsername.equals("")  && !myPassword.equals("") || !myPassword.equals(" ")){
-                        Toast.makeText(getApplicationContext(), "Success!", Toast.LENGTH_SHORT).show();
+                    if(myPhone.matches(regexPhone) && myUsername.matches(regexUser) && myPassword.matches(regexPass)){
+                        Toast.makeText(getApplicationContext(), "ចុះឈ្មោះបានជោកជ័យ!", Toast.LENGTH_SHORT).show();
                         checkSuccess = true;
                     } else {
-                        Toast.makeText(getApplicationContext(), "Not match phone number", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "សូមមេត្ដាពិនិត្យមើលឡើងវិញ", Toast.LENGTH_SHORT).show();
                     }
                 } catch(NumberFormatException e){
-                    Toast.makeText(getApplicationContext(), "Error don't understand", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "មិនយល់", Toast.LENGTH_SHORT).show();
                 }
                 if(checkSuccess == true){
                     intent = new Intent(Register.this, Homepage.class);

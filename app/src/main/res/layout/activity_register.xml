@@ -4,94 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_color"
     tools:context="com.example.vuthy.workplease.Register"
-    android:padding="10dp">
-    <LinearLayout
+    android:padding="25dp">
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerInParent="true">
-
-        <ImageView
-
-            android:layout_width="wrap_content"
-            android:layout_height="250px"
-            android:src="@drawable/tostov"
-            tools:ignore="Suspicious0dp" />
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true">
-            <TextView
-                android:id="@+id/txtPhoneNum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="លេខទូរស័ព្ទ: "
-                android:textSize="19.5dp" />
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ចុះបញ្ជីឈ្មោះ"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                     android:layout_marginTop="30dp"
+                    android:textSize="35dp"/>
+            </RelativeLayout>
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/txtBoxPhoneNum"
-                android:hint="077238385"
-                android:inputType="number"/>
+                android:layout_marginTop="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:hint="លេខទូរស័ព្ទ"
+                android:textColorHint="#e53265"
+                android:inputType="phone"
+                android:paddingHorizontal="50dp"
+                android:textSize="20dp" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtUser"
-                android:textSize="19.5dp"
-                android:text="ឈ្មោះគណនី: "/>
             <EditText
+                android:layout_marginTop="15dp"
+                android:layout_width="360dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:paddingLeft="25dp"
+                android:textColorHint="#e53265"
+                android:textSize="20dp"
+                android:paddingHorizontal="50dp"
                 android:id="@+id/txtBoxUser"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Tos Tov"/>
+                android:hint="ឈ្មោះគណនី"/>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/txtPss"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="19.5dp"
-                android:text="លេខសម្ងាត់: "/>
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="****"
+                android:layout_marginTop="15dp"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:paddingLeft="25dp"
+                android:textSize="20dp"
+                android:textColorHint="#e53265"
                 android:id="@+id/txtBoxpss"
+                android:paddingHorizontal="50dp"
                 android:inputType="textPassword"
-                />
-        </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                android:hint="លេខសម្ងាត់"/>
 
             <Button
-                android:id="@+id/btnRegister"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_width="280dp"
+                android:layout_height="57dp"
                 android:layout_centerHorizontal="true"
-                android:paddingHorizontal="60dp"
                 android:text="ចុះឈ្មោះប្រើ"
-                android:textSize="16dp"
-                tools:ignore="OnClick" />
-        </RelativeLayout>
+                tools:ignore="OnClick"
+                android:layout_gravity="center"
+                android:textSize="22dp"
+                android:textColor="#ffffff"
+                android:background="#BE4248"                    android:textAlignment="center"
+                android:id="@+id/btnRegister"
+                />
 
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
